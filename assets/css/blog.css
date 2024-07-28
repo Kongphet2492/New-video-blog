@@ -275,7 +275,7 @@ header.shadow .logo{
     border: 2px solid var(--bg-color-01);
 }
 .post-content{
-    margin-top: 10rem !important;
+    margin-top: 13rem !important;
 }
 .sub-heading{
     font-size: 1rem;
@@ -342,7 +342,7 @@ header.shadow .logo{
         height: 435px;
     }
     .post-content{
-        margin-top: 12rem !important;
+        margin-top: 15rem !important;
     }
 }
 @media (max-width:570px){
@@ -356,7 +356,7 @@ header.shadow .logo{
         height: 340px;
     }
     .post-content{
-        margin-top: 12rem !important; /* ໂຕເກົ່າແມ່ນ 5rem */
+        margin-top: 15rem !important; /* ໂຕເກົ່າແມ່ນ 5rem */
     }
     .footer{
         flex-direction: column;
