@@ -11,9 +11,9 @@
 :root {
 
   /* Fonts */
-  --font-default: 'Noto Sans Lao', 'Open Sans', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-primary: 'Noto Sans Lao', 'Source Sans Pro', sans-serif;
-  --font-secondary: 'Noto Sans Lao','Poppins', sans-serif;
+  --font-default: 'Noto Sans Lao', 'Times New Roman', 'Open Sans', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-primary: 'Noto Sans Lao', 'Times New Roman', 'Source Sans Pro', sans-serif;
+  --font-secondary: 'Noto Sans Lao', 'Times New Roman', 'Poppins', sans-serif;
 
   
   /* Default text color */

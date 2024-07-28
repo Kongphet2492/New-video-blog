@@ -10,6 +10,57 @@
     <link rel="stylesheet" href="assets/css/blog.css">
     <!-- Box Icons -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        h3{
+            text-align: center;
+        }
+        table {
+          font-family: 'poppins', 'Noto Sans Lao', sans-serif;
+        }
+        td a {
+          text-decoration: underline;
+          color: #0d6efd;
+        }
+        .table-responsive{
+          margin: 0 1%;
+        }
+        .table{
+          width: 100%;
+          border-collapse: collapse;
+        }
+        @media only screen and (max-width:800px) {
+            #no-more-tables tbody,
+            #no-more-tables tr,
+            #no-more-tables td {
+                display: block;
+            }
+            #no-more-tables thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            #no-more-tables td {
+                position: relative;
+                padding-left: 50%;
+                border: none;
+                border-bottom: 1px solid #eee;
+            }
+            #no-more-tables td:before {
+                content: attr(data-title);
+                position: absolute;
+                left: 6px;
+                font-weight: bold;
+            }
+            #no-more-tables tr {
+                border-bottom: 1px solid #ccc;
+            }
+        }
+
+    </style>
+    <!-- /Bootstrap framework for data table -->
+
 </head>
 <body>
     <!-- Header -->
@@ -19,7 +70,7 @@
             <!-- Logo -->
             <a href="index.html" class="logo">Lar<span>Dev2024</span></a>
             <!-- Login Btn -->
-            <a href="#" class="login">ກົດເພື່ອສໍາເນົາ File</a>
+            <a href="https://docs.google.com/spreadsheets/d/1RMFhDoyTSAlwdvUeBQRL5CRugzsLuMCYTg1wDBNC2lo/copy" class="login">ກົດເພື່ອສໍາເນົາ File</a>
         </div>
     </header>
 
@@ -27,9 +78,9 @@
     <section class="post-header">
         <div class="header-content post-container">
             <!-- Back To Home -->
-            <a href="index.html" class="back-home" style="font-size: 1.3rem;">ກັບຄືນໜ້າວີດີໂອແນະນໍາ</a>
+            <a href="index.html" class="back-home" style="font-size: 1.2rem;">ກັບຄືນໜ້າວີດີໂອແນະນໍາ</a>
             <!-- Title -->
-            <h1 class="header-title">ການນໍາໃຊ້ລະບົບບັນທຶກເອກະສານຂາອອກ-ຂາເຂົ້າ <br>
+            <h1 class="header-title" style="font-size: 1.1rem; padding: 10px;">ການນໍາໃຊ້ລະບົບບັນທຶກເອກະສານຂາອອກ-ຂາເຂົ້າ <br>
                 (E-Document 2024)</h1>
             <!-- Post Image -->
             <img src="assets/img/blog-01/Screenshot 2024-07-28 182647.png" alt="" class="header-img">
@@ -56,19 +107,83 @@
                 <strong>5.</strong>	ມີລະບົບການແຈ້ງເຕືອນຜ່ານ Line ໄປຫາແຕ່ລະພາກສ່ວນທີ່ກ່ຽວຂ້ອງ.
             </p>
 
-            <h2 class="sub-heading">II.	ຖານຂໍ້ມູນຈັດເກັບຂໍ້ມູນ (Database).</h2>
+            <!-- <h2 class="sub-heading">II.	ຖານຂໍ້ມູນຈັດເກັບຂໍ້ມູນ (Database).</h2>
             
-
             <p class="post-text">
                 ສໍາລັບຖານຂໍ້ມູນນີ້ ແມ່ນໃຊ້ Google Sheets ຂອງ Google Drive ເປັນຖານບັນທຶກລາຍຂະອຽດຕ່າງໆທັງໝົດທີ່ໄດ້ມີການລົງຂໍ້ມູນຢູ່ໜ້າຕ່າງຂອງລະບົບດັ່ງກ່າວນີ້ ເຊິ່ງປະກອບມີ 18 Sheets ເຊັ່ນ: 
-            </p>
+            </p> -->
 
-            <p class="post-text">
-                <strong>1.</strong>	ຖານຂໍ້ມູນສ່ວນຫຼັງບ້ານ (Back end) ທີ່ໃຊ້ໃນການຈັດເກັບລາຍລະອຽດຂອງຂໍ້ມູນ ແມ່ນໃຊ້ Google Sheets ແລະ ຍັງມີການສ້າງ Folder ໄວ້ໃນການບັນທຶກຈັດເກັບບັນດາເອກະສານແນບຕ່າງໆ ໂດຍແຍກອອກເປັນແຕ່ລະປະເພດຂອງເອກະສານໃຫ້ອີກດ້ວຍ.<br> 
-                <strong>2.</strong>	ມີໜ້າລົງທະບຽນເຂົ້າໃຊ້ງານລະບົບ Log in ໂດຍໃຊ້ Username ແລະ Password.<br> 
-                <strong>3.</strong>	ມີໜ້າຫຼັກ Home Page ທີ່ຈະແດງເມນູລາຍການເຄື່ອນໄຫວຕ່າງຂອງລະບົບ.<br>
-                <strong>4.</strong>	ສາມາດກໍານົດສິດໃນການເຂົ້າໃຊ້ງານຂອງລະບົບ ໂດຍແມ່ນ Admin ຜູ້ດູແລລະບົບສູງສຸດ ເປັນຝ່າຍທີ່ກໍານົດ Username ແລະ Password ໃຫ້ແຕ່ລະພາກສ່ວນ.<br>
-                <strong>5.</strong>	ມີລະບົບການແຈ້ງເຕືອນຜ່ານ Line ໄປຫາແຕ່ລະພາກສ່ວນທີ່ກ່ຽວຂ້ອງ.
+            <!-- <section class="bg-light p-5">
+                <div class="table-responsive" id="no-more-tables">
+                    <table class="table bg-white" style="text-align: center;">
+                        <thead class="bg-gray text-black">
+                          <tr>
+                            <th>ລໍາດັບ</th>
+                            <th>Sheet Name</th>
+                            <th>Database</th>
+                        </tr>
+                        </thead>
+                    <tbody>
+                        <tr>
+                            <td data-title="ລໍາດັບ">01</td>
+                            <td data-title="ແຂວງ">DataA</td>
+                            <td data-title="ປະເພດເອກະສານ">ລາຍລະອຽດການຮັບເອກະສານຂາເຂົ້າພາຍນອກ</td>
+                        </tr>
+                        <tr>
+                            <td data-title="ລໍາດັບ">02</td>
+                            <td data-title="ແຂວງ">DataB</td>
+                            <td data-title="ປະເພດເອກະສານ">ລາຍລະອຽດການຮັບເອກະສານຂາເຂົ້າພາຍໃນ</td>
+                        </tr>
+                        <tr>
+                            <td data-title="ລໍາດັບ">03</td>
+                            <td data-title="ແຂວງ">DataC</td>
+                            <td data-title="ປະເພດເອກະສານ">pdf</td>
+
+                        </tr>
+                        <tr>
+                            <td data-title="ລໍາດັບ">04</td>
+                            <td data-title="ແຂວງ">DataD</td>
+                            <td data-title="ປະເພດເອກະສານ">pdf</td>
+
+                        </tr>
+                        <tr>
+                            <td data-title="ລໍາດັບ">05</td>
+                            <td data-title="ແຂວງ">DataE</td>
+                            <td data-title="ປະເພດເອກະສານ">pdf</td>
+
+                        </tr>
+                        <tr>
+                            <td data-title="ລໍາດັບ">06</td>
+                            <td data-title="ແຂວງ">DataF</td>
+                            <td data-title="ປະເພດເອກະສານ">pdf</td>
+
+                        </tr>
+                        </tbody>
+                    </table>
+            
+                </div>
+            </section> -->
+
+
+            <!-- <p class="post-text">
+                <strong>1. DataA:</strong>	ລາຍລະອຽດການຮັບເອກະສານຂາເຂົ້າພາຍນອກ.<br> 
+                <strong>2. DataB:</strong>	ລາຍລະອຽດການຮັບເອກະສານຂາເຂົ້າພາຍໃນ.<br> 
+                <strong>3. DataC:</strong>	ມີໜ້າຫຼັກ Home Page ທີ່ຈະແດງເມນູລາຍການເຄື່ອນໄຫວຕ່າງຂອງລະບົບ.<br>
+                <strong>4. DataD:</strong>	 Username ແລະ Password ໃຫ້ແຕ່ລະພາກສ່ວນ.<br>
+                <strong>5. DataE:</strong>	ມີລະບົບການແຈ້ງເຕືອນຜ່ານ Line ໄປຫາແຕ່ລະພາກສ່ວນທີ່ກ່ຽວຂ້ອງ.
+                <strong>6. DataF:</strong>  <br>
+                <strong>7. DataG:</strong>  <br>
+                <strong>8. DataH:</strong>  <br>
+                <strong>9. DataSA:</strong>  <br>
+                <strong>10. DataSB:</strong>  <br>
+                <strong>11. Users:</strong>  <br>
+                <strong>12. LogUser:</strong>  <br>
+                <strong>13. Setting:</strong>  <br>
+                <strong>14. DataE:</strong>  <br>
+                <strong>15. DataE:</strong>  <br>
+                <strong>16. DataE:</strong>  <br>
+                <strong>17. DataE:</strong>  <br>
+                <strong>18. DataE:</strong>  <br>
             </p>
 
             <p class="post-text">
@@ -76,7 +191,7 @@
             </p>
             <p class="post-text">
                
-            </p>
+            </p> -->
 
 
             <h2 class="sub-heading">III.	ການກໍານົດສິດໃນການໃຊ້ງານ ແລະ ການເຂົ້າເຖິງຂໍ້ມູນພາຍໃນລະບົບ.</h2>
